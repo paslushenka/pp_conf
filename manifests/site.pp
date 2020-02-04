@@ -2,6 +2,9 @@ node default {
 }
 
 node 'master.puppet' {
+   file { '/root/README':
+      ensure => absent,
+      }
 }
 
 node 'slave1.puppet' {
